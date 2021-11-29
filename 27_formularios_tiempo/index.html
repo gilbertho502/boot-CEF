@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>formulario de tiempo</title>
+  </head>
+  <body>
+    <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+      Selecciona la fecha dedeada:
+      <input type="date" name="fecha" min="2018-03-25" max="2018-05-25" />
+      Selecciona la hora deseada:
+      <input
+        type="time"
+        name="hora"
+        min="18:00"
+        max="21:00"
+        step="3600"
+        list="times"
+      />
+
+      <datalist id="times">
+        <option value="17:00:00"></option>
+        <option value="18:00:00"></option>
+        <option value="19:00:00"></option>
+        <option value="20:00:00"></option>
+        <option value="21:00:00"></option>
+        <option value="22:00:00"></option>
+      </datalist>
+
+      seleciona el mes deseado:
+      <input
+        type="month"
+        name="mes"
+        value="2018-05"
+        min="2018-02"
+        max="2018-06"
+        step="2"
+      />
+
+      selecciona la semana deseada:
+      <input
+        type="week"
+        name="semana"
+        value="2018-W18"
+        min="2018-W10"
+        max="2018-W20"
+        step="2"
+      />
+
+      <p>
+        Sexo:
+        <input type="radio" name="genero" id="H" />Hombre
+        <input type="radio" name="genero" id="M" />Mujer
+      </p>
+
+      <!-- Casilla de verifdicacion (marca por defecto) -->
+      <input type="checkbox" name="empresa" checked />
+      Eres autonomo/empresa
+      <br />
+      <br />
+      Seleccione la opcion deseada:
+      <select name="combo" multiple>
+        <optgroup label="Opciones basicas">
+          <option value="1" label="opcion 1"></option>
+        </optgroup>
+        <!-- opciones de la lista -->
+        <optgroup label="opciones avanzadas">
+          <option value="2" label="opcion 2"></option>
+          <option value="3" label="opcion 3"></option>
+        </optgroup>
+      </select>
+      <br />
+
+      Selecciona la lista
+      <input type="text" list="items" />
+      <!-- lista de opciones -->
+      <datalist id="items">
+        <option value="1">Opcion 1</option>
+        <option value="2">Opcion 2</option>
+        <option value="3">Opcion 3</option>
+      </datalist>
+
+      Selecciona el color deseado:
+      <input type="color" name="color" value="#1BF44a" />
+      <input type="file" 
+      name="adjunto" 
+      accept=".pdf, .jpg, .png" 
+      multiple>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+/* hijos */
+/* div#pagina div{
+    background-color: #00f;
+} */
+/* hijos directos */
+/* div#pagina > div{
+    border: 2px solid coral;
+} */
+
+/* hermano adyacente */
+/* div.articulo strong + span{
+    color: #00f;
+} */
+/* todos los hermanos, hno general */
+div.articulo strong ~ span{
+    color: #0f0; 
+}

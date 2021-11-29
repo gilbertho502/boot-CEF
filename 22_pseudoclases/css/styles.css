@@ -1,0 +1,33 @@
+a:link{
+    color: green;
+    font-weight: bold;
+}
+a:visited{
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Usuario mueve el raton sobre un enlace */
+a:hover{
+    background-color: cyan;
+    padding: 2px;
+}
+/* usuario mueve rao sobre un div y resalta todos los enlaces que contiene */
+div:hover a{
+    background-color: steelblue;
+    color: #fff;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+a:active{
+    border: 2px solid #f00;
+    padding: 2px;
+}
+a:active, div:active{
+    border: 10px solid #f00;
+    padding: 2px;
+}

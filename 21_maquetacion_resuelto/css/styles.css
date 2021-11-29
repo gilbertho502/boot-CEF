@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #808080;
+}
+
+#content-menu{
+    width: 800px;
+    margin: auto;
+
+}
+.menu-item{
+    background: #fff;
+    padding: 30px;
+    margin: 50px 7%;
+    font-size: 18px;
+    width: 28%;
+    box-shadow: 5px 10px #525252;
+    float: left;
+}
+.menu-item h4{
+    font-size: 24px;
+    margin-left: 20%;
+}
+.menu-item ul {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.menu-item .precio{
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 15px;
+    margin-left: 50%;
+}
+.menu-item i{
+    font-size: 40px;
+    
+}
+.header-menu{
+    min-height: 40px;
+    float: left;
+
+}

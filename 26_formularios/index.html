@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form name="formulario" method="post" action="/send.php">
+      <label> Nombre de usuario </label>
+
+      <input
+        type="text"
+        name="name"
+        value=""
+        placeholder="user123"
+        autocomplete="off"
+      />
+
+      <label> Número de telefono</label>
+      <input type="tel" name="telefono" placeholder="+XX XXX XXXXX" />
+
+      <label> Correo electrónico</label>
+      <input type="email" name="correo" placeholder="nombre@dominio.com" />
+
+      <label> Página web </label>
+      <input type="url" name="web" placeholder="https://pagina.com" />
+
+      <label> Contraseña </label>
+      <input type="password" name="pass" placeholder="Contraseña" />
+
+      <!-- <label> Oculto... </label>
+      <input type="hidden" name="informacion" value="72625" /> -->
+      <label>Bio</label>
+      <textarea spellcheck="true" 
+                cols="15" 
+                rows="5" 
+                wrap="soft">
+      </textarea>
+
+      <label >Numero entre 10 y 50</label>
+      <input type="number" name="numero" value="25" min="10" max="50" step="5">
+      <label >Utilizando un slider numerico</label>
+      <input type="range" name="numrango" value="25" min="10" max="50" step="5">
+
+      <label >Acepto terminos y condiciones</label>
+      <input type="checkbox" name="tyc">
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/58aca4d3f8.js" crossorigin="anonymous"
+    ></script>
+    <title>Ejercicio_formulario</title>
+  </head>
+  <body>
+    <form name="formulario" method="post" action="/send.php">
+      <header>
+        LOGIN
+        <i class="fas fa-lock"></i>
+      </header>
+      <nav>
+        <input type="text" name="usuario" placeholder="Username" />
+        <input type="password" name="pass" placeholder="Contraseña" />
+        <label > <input type="checkbox" name="tyc" /> Keep me logged in </label>
+       
+        <button type="submit" value="Enviar">
+          <i class="fas fa-sign-in-alt"> SIGN IN</i>
+         
+        </button>
+      </nav>
+    </form>
+  </body>
+</html>

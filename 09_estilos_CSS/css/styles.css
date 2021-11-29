@@ -1,0 +1,20 @@
+ body{
+    color: blue;
+}
+
+section h1 small{ 
+    color: red;
+}    
+#parrafo2{
+    color: green;
+}
+p#parrafo2{
+    color: indigo;
+}
+
+.miclase{
+    color: orange !important;
+}
+.otraclase{
+    color: slateblue;
+}

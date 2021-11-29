@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-color: #c0c0c0;
+}
+header{
+    width: 700px;
+    height: 250px;
+    background-color: #ffd001;
+}
+#banner{
+    width: 500px;
+    height: 250px;
+    background-color: #000;
+    float: right;
+}
+#logo, img{
+    width: 200px;
+    height: 125px;
+    background-color: #f00;
+    float: left;
+}
+#buscador{
+    width: 200px;
+    height: 125px;
+    background-color: #800080;
+    float: left;
+}
+input{
+    background-color: gray;
+}
+nav{
+    height: 50px;
+    width: 700px;
+    background-color:#80ff00;
+
+}
+main{
+    height: 400px;
+    width: 700px;
+    background-color: #ffc0cb;
+}
+#izquierda{
+    height: 400px;
+    width: 150px;
+    background-color: #008000 ;
+    float: left;
+}
+article{
+    height: 400px;
+    width: 450px;
+    background-color: #87ceeb;
+    float: left;
+}
+#derecha{
+    height: 400px;
+    width: 100px;
+    background: #00f;
+    float: left;
+}
+
+footer{
+    background: #38a038;
+    height: 60px;
+    width: 700px;
+}
+#contenedor{
+    width: 700px;
+    height: 760px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 10px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li {
+    float: left;
+}
+
+nav a{
+    color: #00f;
+    text-decoration: none;
+    padding: 25px;
+    line-height: 50px;
+}

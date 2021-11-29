@@ -1,0 +1,22 @@
+div, select{
+    margin: 8px;
+}
+/* labels for checked inputs */
+input:checked + label{
+    color: #8c00ff;
+}
+
+/* radio element, when checked */
+input[type="radio"]:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+
+/* checkbox element, when checked */
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 3px hotpink;
+}
+/* option elements, when selected */
+option:checked{
+    box-shadow: 0 0 0 3px line;
+    color: red;
+}

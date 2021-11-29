@@ -1,0 +1,8 @@
+
+*{
+    font-size: x-large;
+}
+input, textarea{
+    display: block;
+    margin-bottom: 15px;
+}

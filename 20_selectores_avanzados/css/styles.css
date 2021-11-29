@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0px;
+}
+
+body header h1, h2{
+    color: #ff0000;
+    
+}
+
+body p{
+    color: #0000ff;
+    margin-top: 10px;
+}
+
+.sombra{
+    border: 1px solid #afafaf;
+    box-shadow: 2px 2px 2px 2px #706d6d;
+    margin: 10px 0px;
+
+}
+
+.sombra ul li{
+    color: #ffae00 ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+    font-style: italic;
+}
+.sombra ul ol li{
+    color: #008000;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+#action-buttons .text-danger{
+    color: #ff0000;
+}
+#action-buttons .text-success{
+    color: #008000;
+}
+.sombra p .badge-black{
+    background-color: black;
+    color: #ffffff;
+}
+
+footer{
+    color: #f00;
+}

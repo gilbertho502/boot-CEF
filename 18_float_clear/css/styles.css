@@ -1,0 +1,43 @@
+@font-face{
+  font-family: "Fruktur";
+  src: url("../fonts/fruktur/fruktur.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fruktur';
+}
+html {
+  background-color: #ddd;
+}
+body {
+  padding: 30px;
+}
+div {
+  padding: 10px;
+  width: 500px;
+  background-color: #fff;
+  border: 2px solid #008000;
+  margin: auto;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+}
+h2 {
+  float: left;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  
+}
+p {
+  float: left;
+  width: 200px;
+  border: 2px solid #000;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+br#cierre{
+  clear: both;
+}

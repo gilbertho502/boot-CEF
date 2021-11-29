@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tablas</title>
+  </head>
+  <style>
+    table,tr,th,td{
+      border:  2px solid chocolate,;
+    }
+  </style>
+  <body>
+ <!--   
+    <table>
+      <p>Tabla usando scope</p>
+      <caption>
+        Guia del clima de los proximos dias
+      </caption>
+    
+      <tr>
+        <th scope ="row">dia</th>
+        <th>Hoy</th>
+        <th>Manana</th>
+        <th>Viernes</th>
+      </tr>
+      <tr>
+        <th>Condicion</th>
+        <td>Soleados</td>
+        <td>Mayormente soleados</td>
+        <td>Parcialmente nublads</td>
+      </tr>
+      <tr>
+        <th>Temperatura</th>
+        <td>19 C</td>
+        <td>17 C</td>
+        <td>12 C</td>
+      </tr>
+      <tr>
+        <th>Velocidad</th>
+        <td>E 13 km/h</td>
+        <td>E 11 km/h</td>
+        <td>S 16 km/h</td>
+      </tr>
+
+    </table>
+
+    <br><br>
+    <p>Columnas</p>
+    <table>
+    <tr>
+      <th scope="row">dia </th>
+      <th>Dia 1</th>
+      <th>Dia 2</th>
+      <th>Dia 3</th>
+      <th>Dia 4</th>
+    </tr>
+    <tr>
+      <th>Mike(lastimado)</th>
+      <td colspan="3">0 km</td>
+      <td>4 km</td>
+    </tr>
+    <tr>
+      <th>Susan</th>
+      <td>23 km</td>
+      <td>18 km</td>
+      <td>19 km</td>
+      <td>15 km</td>
+    </table>
+<br><br>
+<p>Combinando filas</p>
+    <table>
+      <tr>
+        <th></th>
+        <th>Basico</th>
+        <th>Copleto</th>
+      </tr>
+      <tr>
+        <th>Instalacion</th>
+        <td rowspan="2">Gratis!!</td>
+        <td>$49.99</td>
+      </tr>
+      <tr>
+        <th>Primer mes</th>
+        <td>$19.99</td>
+      </tr>
+      <tr>
+        <th>Segundo mes</th>
+        <td>$9.99</td>
+        <td>$29.99</td>
+      </tr>
+    </table>
+    <br><br>
+    <p>Ejercicio</p>
+-->
+    <table border="1">
+      <tr>
+        <th colspan="2">Nombres</th>
+        <th>Edad</th>
+        <th>Curso</th>
+      </tr>
+      <tr>
+        <td>Eduardo</td>
+        <td>Soria Gomez</td>
+        <td rowspan="3">12</td>
+        <td>Primero D</td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Perez Diaz</td>
+        <td>Primero A</td>
+      </tr>
+      <tr>
+        <td>Martin</td>
+        <td>Pereira Silva</td>
+        <td>Primero B</td>
+      </tr>
+    </table>
+    <br><br>
+
+
+    
+    <table border="1">
+      <caption>Tabla con combinacion de filas y columnas</caption>
+
+      <tr>
+        <th>Celda 1</th>
+        <th>Celda 2</th>
+        <th>Celda 3</th>
+        <th>Celda 4</th>
+      </tr>
+      <tr>
+        <td rowspan="4">Celda 5</td>
+      </tr>
+      <tr>
+        <td>Celda 6</td>
+        <td colspan="2">celda 7</td>
+      </tr>
+      <tr>
+        <td>celda 8</td>
+        <td>celda 9</td>
+        <td rowspan="2">celda 10</td>
+      </tr>
+      <tr>
+        <td colspan="2">celda 11</td>
+      </tr>
+    </table>
+
+  </body>
+</html>

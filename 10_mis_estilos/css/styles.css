@@ -1,0 +1,57 @@
+ /* *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+body {
+    font-family: Helvetica;
+    color: black;
+}
+h1{
+    font-family: Verdana;
+}
+/*para comentar 
+p{
+    color: red;
+}
+#oversized{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px slateblue;
+    
+} 
+
+ div p{
+    line-height: 100px; /* tamaño de una caja 
+    background-color: springgreen;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing:  2px;
+    word-spacing: 10px;
+} 
+*/
+
+#caja_externa{
+    background-color: darkorange;
+    /*arriba, derecha, abajo, izquierda */
+    margin: 10px;
+    padding: 20px;
+}
+
+#caja_interna {
+    font-size: 20px;
+    background-color: greenyellow;
+    padding: 10px;
+    margin: 20px;
+    
+}
+p{
+    margin: 0;
+    padding: 0;
+    width: 140px;
+    height: 75px;
+    background-color: hotpink;
+    display: inline;
+
+}
+#oculto{
+    display: none;
+}

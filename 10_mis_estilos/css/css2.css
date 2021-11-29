@@ -1,0 +1,50 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+.card{
+    background-color: silver;
+    width: 30%;
+    height: 200px;
+    /*esquina superior iz, esq sup der, esq inf iz, esq inf der */
+    border-radius: 20px;
+    
+}
+
+.card_head{
+    height: 20%;
+
+}
+
+.card_body{
+    background-color: steelblue;
+    height: 60%;
+
+}
+
+.card_footer{
+    height: 20%;  
+}
+/*Estilos para texto */
+.texto_grande{
+    font-size: 2em;
+}
+.texto_mediano{
+    font-size: 14px;
+}
+.texto_pequeño{
+    font-size: 10px;
+}
+.texto_centrado{
+    text-align: center;
+}
+.texto_derecha{
+    text-align: start;
+}
+.texto_izquierda{
+    text-align: end;
+}
