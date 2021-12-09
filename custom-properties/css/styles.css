@@ -1,0 +1,24 @@
+/* tema personalizado */
+@import url('../../theme/index.css');
+/* variables locales */
+@import url('common.css');
+
+/* estilos locales */
+/* .box{
+    width: var(--tamano);
+    height: var(--tamano);
+    margin-bottom: 10px;
+    background-color: var(--color-primary);
+}
+
+.circle{
+    width: var(--tamano);
+    height: var(--tamano);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: var(--color-secondary);
+
+} */
+.bg-blue{
+    background: var(--color-blue);
+}

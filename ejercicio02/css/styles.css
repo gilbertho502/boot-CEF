@@ -1,0 +1,27 @@
+h1 {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid blue;
+  }
+
+#lista1 {
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid rgb(20, 255, 30);
+}
+
+#head2 {
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+}
+#lista1 li {
+  margin-top: 15px;
+}
+#descripcion{
+    border: 1px solid gray;
+}
+/*Clase es con "." */
+/*ID es con "#" */ 
