@@ -1,0 +1,43 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+header {
+    color: steelblue;
+    text-align: center;
+}
+
+.container{
+    background-color: steelblue;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    /* wrap = aling-content
+      no wrap = align-items
+    */
+    /* Alineacion horizontal */
+    justify-content: space-between;
+    /* Alineacion vertical */
+    align-items: flex-end; 
+}
+
+.item{
+    font-size: x-large;
+    background-color: beige;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    /* height: 300px; */
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.item:nth-child(2){
+    align-self: flex-start;
+}
+.item:last-child{
+    align-self: center;
+}

@@ -1,0 +1,54 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+header {
+    color: steelblue;
+    text-align: center;
+
+}
+.container{
+    background-color: #3ddde2;
+    color: #fff;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+}
+.header{
+    background-color: #00d1a4;
+    width: 90%;
+    height: 25px;
+    align-self: flex-start;
+}
+.aside{
+    background-color: #32fc80;
+    width: 100px;
+    height: 200px;
+    align-self: flex-start;
+}
+.article{
+    width: 250px;
+    height: 200px;
+    background-color: #ff7f50;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.item{
+    background-color: goldenrod;
+    width: 65px;
+    height: 65px;
+}
+.footer{
+    width: 90%;
+    height: 25px;
+    background-color: #00d1a4;
+}

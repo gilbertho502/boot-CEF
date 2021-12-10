@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body > div > div {
+    margin: 10px;
+  }
+
+  /* FONDOS DE COLOR GENERICOS */
+  .bg-skyblue {
+    background: skyblue;
+  }
+  .bg-gold {
+    background: gold;
+  }
+  /* ALTOS DE PANTALLA GENERICOS*/
+  .h-25 {
+    height: 25vh;
+  }
+  .h-50 {
+    height: 50vh;
+  }
+  .h-100 {
+    height: 100vh;
+  }
+  /* FLEXBOX GENERICOS */
+  .d-flex {
+    display: flex;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  /* BASES GENERICOS*/
+
+  .basis-15 {
+    flex-basis: 15%;
+  }
+  .basis-25 {
+    flex-basis: 25%;
+  }
+  .basis-30 {
+    flex-basis: 30%;
+  }
+  .basis-50 {
+    flex-basis: 50%;
+  }
+  .basis-75 {
+    flex-basis: 75%;
+  }
+
+  /* FLEX GENERICOS */
+
+  .flex-15 {
+    flex: 15; /* Flex-grow (N) Flex-shrink :0 Flex-basis: 0*/
+  }
+  .flex-20 {
+    flex: 20;
+  }
+  .flex-25 {
+    flex: 25;
+  }
+  .flex-50 {
+    flex: 50;
+  }
+  .flex-60 {
+    flex: 50;
+  }
+  .flex-75 {
+    flex: 75;
+  }
+
+  /* GROW Y SHRINK GENERICOS */
+
+  .grow-1 {
+    flex-grow: 1; /*Crece*/
+  }
+  .grow-0 {
+    flex-grow: 0; /*No crece*/
+  }
+  .shrink-0 {
+    flex-shrink: 0; /*No reajustes tamaño*/
+  }

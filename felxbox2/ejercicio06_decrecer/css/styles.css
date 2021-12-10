@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  margin: 10px 0px;
+}
+.container {
+  background-color: grey;
+  width: 600px;
+  height: 80vh;
+  margin: auto;
+  
+}
+.item {
+  background-color: lightgreen;
+  /* width: 100px;
+  */
+  color: #000;
+  font-size: x-large;
+}
+.item:nth-child(even) {
+  background-color: lightseagreen;
+}
+
+/* 
+    total espacio =600px
+    tamaño elemento = 100px
+    Espacio disponible = 600px -7(100px)
+                       = -100px
+    Unidad de decrecimiento = -100px / 7
+                            = -14.2px
+                            
+    Tamaño real Items = Basis + Unid.Decrecimiento
+                      = 100px - 14.2px
+                      = 85.8px                        
+
+    Tamaño real Item 3 = basis -Unid.Decrecimiento * flex-shrink
+                       =100px -(14.2 *3)
+                       =57.4px                
+*/
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+
+    justify-content: flex;
+    align-items: stretch;
+}
+
+/* 
+    Propiedad FLEX
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+
+flex: 0 1 auto;
+flex: none --> 0 0 auto;
+flex: auto --> 1 1 auto;
+flex: N;
+*/
+.item{
+    /* flex-basis: 25%;
+    flex-shrink: 1; */
+    flex: auto;
+}    

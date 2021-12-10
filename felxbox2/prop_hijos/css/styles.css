@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: steelblue;
+    width: 800px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+
+}
+.item {
+    background-color: seagreen;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: x-large;
+
+    /* tamaño base 
+    row --> widht
+    column --> height*/
+    flex-basis: 100px;
+    /* Cuanto voy a crecer */
+    flex-grow: 1;
+}
+.item:nth-child(even){
+    background-color: slateblue;
+}
+
+.item:first-child{
+  flex-grow: 3;
+}
+  /* 
+  Espacio total = 800px
+  Espacio disponile =  800px -4(100px) = 4000px
+  sumatoria del flex-grow =4
+
+  Unidad de crecimiento = 400px/6 = 66.67px
+  */
+
+
+  /* item 1: 
+  flex-grow o unidad de crecimiento = 1
+  Cuanta o crecido: = facto de crec * und de crec
+
+  crecio = 1 *66.67px 
+
+  Tamaño actual? 
+  tamaño base + cuanto crecio
+
+  100px+66.67 px
+
+ *----------------------------------
+ 3*66.67=199.8 aprox 200pxº
+
+ 100px+200px = 300px
+  
+  
+  */

@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: indianred;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

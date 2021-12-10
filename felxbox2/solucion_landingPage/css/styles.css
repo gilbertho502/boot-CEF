@@ -1,0 +1,40 @@
+@import url('global.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 20px;
+}
+nav > a{
+    background: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+footer ul>li a{
+    color: #fff;
+    text-decoration: none;
+    background: var(--info-color);
+    padding: 10px 10px;
+
+
+}
+
+footer ul>li{ 
+    list-style: none;
+    
+}
+aside > div{
+    height: 40%;
+}
+hr{
+    margin: 10px 0;
+}
+.logo{
+    width: 200px;
+    height: 50px;
+    background: gray;
+}

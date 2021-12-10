@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Custom flex</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color:#91c4eb;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.hor{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.ver{
+    background-color: gold;
+}
+.ver:nth-child(1){
+
+    width: 25%;
+}
+
+.ver:nth-child(2){
+    
+    width: 73%;
+}
+
+.hor:nth-child(2) .ver:nth-child(1){
+    width: 20%;
+}
+
+.hor:nth-child(2) .ver:nth-child(2){
+    width: 20%;
+}
+.hor:nth-child(2) .ver:nth-child(3){
+    width: 20%;
+}
+.hor:nth-child(2) .ver:nth-child(4){
+    width: 35%;
+}
+
+.hor:nth-child(3) .ver:nth-child(1){
+    width: 30%;
+}
+
+.hor:nth-child(3) .ver:nth-child(2){
+    width: 45%;
+}
+.hor:nth-child(3) .ver:nth-child(3){
+    width: 20%;
+}
+
+.hor:nth-child(1){
+    width: 90%;
+    height: 30%;
+   
+}
+.hor:nth-child(2){
+    width: 90%;
+    height: 20%;
+    
+}
+.hor:nth-child(3){
+    width: 90%;
+    height: 50%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hor">
+            <div class="ver"></div>
+            <div class="ver"></div>
+        </div>
+        <div class="hor">
+            <div class="ver"></div>
+            <div class="ver"></div>
+            <div class="ver"></div>
+            <div class="ver"></div>
+        </div>
+        <div class="hor">
+            <div class="ver"></div>
+            <div class="ver"></div>
+            <div class="ver"></div>
+        </div>
+    </div>
+</body>
+</html>

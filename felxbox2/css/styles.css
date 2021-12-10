@@ -1,0 +1,94 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+header {
+    color: steelblue;
+    text-align: center;
+}
+/*
+ Direccion : row 
+ MAIN AXIS = Eje principal (Horizontal)
+ MAIN SIZE -> Espacio del Main Axis -> Width
+
+ CROSS AXIS = Eje secundario (Vertical)
+ CROSS SIZE -> Espacio del Cross Axis -> Height
+ -----------------------------------------------
+ Direccion : Column 
+ MAIN AXIS = Eje principal (Vertical)
+ MAIN SIZE -> Espacio del Main Axis -> Height
+
+ CROSS AXIS = Eje secundario (Horizontal)
+ CROSS SIZE -> Espacio del Cross Axis -> Width
+*/
+
+/* CROSS SIZE (height)-> row  VERTICAL
+
+    1. Espacio especifico (defined) 
+       Resultado : Respeta height
+
+    2. No tamaño especifico (undefined) y
+       tampoco align-items (undefined) 
+       Resultado : Todo el height del contenedor
+                   -> align-items : stretch
+
+    3. No tamaño especifico (undefined) 
+      pero align-items diferente (!=) stretch
+      Resultado : 
+      Se respeta la alineación del align-items
+      toma el alto del contenido
+*/
+
+/* MAIN SIZE (width) ->row  HORIZONTAL
+  1. Espacio disponible y Espacio Ocupado
+  2. Los margenes nunca se colapsan
+  3. Espacio disponible puede ser negativo
+*/
+
+
+.container{
+    background-color: steelblue;
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* Alineacion del Main axis (Horizontal)*/
+    
+    /* ALINEACION VERTICAL UNA LINEA (cross axis)*/
+    /* Requisito: Desbordamiento desactivado */
+    /* flex-wrap: nowrap; 
+    align-items: center;  */
+    /* ALINEACION VERTICAL MULTILINEA (cross axis)*/
+    /* Requisito: Desbordamiento activado */
+    justify-content: space-between;
+    align-items: flex-end; 
+    
+}
+
+/* Espacio ocupado 1 item
+  width : 100px 
+  margin: 20px;
+  padding: 0px;
+  border: 0px;
+  total ocupado = 120px * 3 = 360px
+  total disponible = 600px - 360px = 240px
+*/
+
+/* 
+Total=(width:100px + margin:20px) * 6 = 720px 
+Espacio disponible : -120px / 6  = -20px
+Real width : 80px; 
+Espacio Ocup: 80px +20px = 100px
+*/
+.item{
+    font-size: x-large;
+    background-color: beige;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    /* height: 300px; */
+    border: 1px solid black;
+    /* box-sizing: border-box; */
+}
