@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: #ecf0f2;
+}
+.mt-2{
+    margin-top: 20px;
+}
+.mb-2{
+    margin-bottom: 20px;
+}
+.w-50{
+    width: 50%;
+    display: inline-block;
+}
+
+/* CABECERA */ 
+header{
+    background-color: #4d6eaa;
+    height: 100px;
+}
+header .container{
+    padding: 30px;
+}
+/* Logo */
+header img {
+    float: left;
+    width:140px;
+}
+/* Formulario de Login */
+header form {
+    float: right;
+}
+
+/* Labels flotantes*/
+#form_login span {
+    position: relative;
+}
+#form_login span::after {
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    color: white;
+    font-size: smaller;
+}
+/* Textos de mis Labels flotantes*/
+#username::after{
+    content: "Email or phone";
+}
+#contraseña::after{
+    content: "Password";
+}
+/* Boton de Login */
+#form_login input[type=submit]{
+    background: #5f80b5;
+    color: #fff;
+    border: 2px solid #456496;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+/* a -> Forgotten account */
+#form_login a {
+    color: #a4c1ee;
+    display: block;
+    text-decoration: none;
+    margin-left: 44%;
+    margin-top: 2px;
+    font-size: smaller;
+}
+/* Campos de texto de mi formulario */
+#form_login span>input{
+    border: none;
+    width: 180px;
+}
+
+/* CUERPO */
+main{
+    padding: 2%;
+}
+main form {
+    width: 400px;
+    float: right;
+}
+
+main .inline > *{
+    float: left;
+    width: 46%;
+}
+main .inline >*:last-child{
+    float: right;
+}
+
+main .block{
+    display: inline-block;
+    width: 98%;
+}
+br{
+    clear: both;
+}
+#form_register input[type='text'],
+#form_register input[type='password'],
+#form_register input[type='email'],
+#form_register input[type='date']{
+    height: 30px;
+    border: none;
+    outline: solid 1px gray;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px 1px #797979;
+    margin: 7px 0;
+    padding: 0% 1%;
+}
+#form_register .info,
+#form_register a{
+    font-size: x-small;
+}
+#form_register input[type='submit']{
+    background: linear-gradient(#72ae5e, #629750);
+    color: #fff;
+    border: 1px solid #629750 ;
+    padding: 5px 0px ;
+    width: 50%;
+    border-radius: 5px ;
+}

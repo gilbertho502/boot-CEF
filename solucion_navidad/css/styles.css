@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+}
+body {
+  background: #333;
+  padding-top: 10%;
+}
+.regalo {
+  width: 410px;
+  margin: 10% auto;
+  position: relative;
+  /* top: 100px; */
+}
+
+.tapa,
+.caja {
+  position: absolute;
+}
+.envoltura {
+  background: radial-gradient(circle, white 10%, #6a5acd 20%);
+  background-size: 40px 40px;
+  /* background-color: slateblue;
+background-image: url('../images/punto.png');
+background-size: 40px;
+ */
+  box-shadow: 1px 2px 3px #000000a4;
+}
+.tapa {
+  width: 410px;
+  height: 70px;
+  /*Posiciones*/
+  z-index: 2;
+  left: 0;
+
+  
+  /* transform: rotateZ(10deg)
+  transform: translateY(-100px); */
+  transition-property: transform;
+  transition-duration: 1.5s;
+
+}
+.caja {
+  width: 400px;
+  height: 250px;
+  /*Posiciones*/
+  top: 70px;
+  left: 4px;
+}
+
+.mensaje {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.cinta {
+  position: absolute;
+  box-shadow: 1px 2px 3px #4444449d;
+  opacity: 0.8;
+}
+.gold {
+  background-color: #ffd900;
+}
+.silver {
+  background-color: #c4c4c4;
+}
+/* Posiciones absolutas*/
+
+.tapa > .cinta {
+  width: 70px;
+  height: 70px;
+  /* left: 400px - 70px = 330px/2 = 165.5px  */
+  left: 165.5px;
+}
+.caja > .cinta:first-child {
+  width: 70px;
+  height: 100%;
+  z-index: 1;
+  left: 165.5px;
+}
+.caja > .cinta:last-child {
+  width: 100%;
+  height: 70px;
+  /* top: 250px- 70px = 180px/2 = 90px */
+  z-index: 0;
+  top: 90px;
+}
+.mensaje {
+  position: absolute;
+  top: 0px;
+  left: 16%;
+}
+
+/* Animaciones */
+
+.regalo:hover .tapa {
+  /* bottom: 30px; */
+  transform: translateY(-100px), 
+  translateZ(180deg);
+}
+.regalo:hover .mensaje {
+  /* top: -15px; */
+  transform: translateY(-20px) ;
+  
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Work+Sans:wght@300&family=Yantramanav:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Facebook</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="images/facebook" alt="facebook" />
+        <form id="form_login" action="login.php" method="post">
+          <span id="username">
+            <input type="text" name="username" />
+          </span>
+          <span id="contrasena">
+            <input type="password" name="password" />
+          </span>
+          <input type="submit" value="Log In" />
+          <a href="#">Forgotten account</a>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <form id="form_register" action="register" method="post">
+        <h1>Create a new account</h1>
+        <p class="mb-2">Its free and always will be</p>
+
+        <div class="inline">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Surname" />
+        </div>
+        <br />
+        <input
+          class="block"
+          type="email"
+          placeholder="Mobile numer or email addres"
+        />
+        <input class="block" type="password" name="password" placeholder="New password" />
+
+        <h4>Birthday</h4>
+        <div class="inline">
+          <input type="date" name="birthday" />
+          <a href="#">Why do i need to provide my date of birth</a>
+        </div>
+        <br>
+        <div class="inline w-50">
+            <label for="opt_fem">
+                <input
+                  id="opt_fem"
+                  type="radio"
+                  name="genero"
+                  value="female"
+                />Femenio</label
+              >
+              <label for="opt_mal">
+                <input id="opt_mal" type="radio" name="genero" value="male" />
+                Varon</label
+              >
+        </div>
+        <br>
+        <p class="info mt-2" >
+          By clicking Create Account, ou aggre to our <a href="#">Terms</a> and
+          confirm that you have read our <a href="#">Data policy</a>, incluiding
+          our <a href="#"> Cookie use policy</a> you may recieve SMS messeage
+          notifications form Facebook and can opt out at any time
+        </p>
+        <input class="mt-2" type="submit" value="Create Account" >
+      </form>
+    </main>
+  </body>
+</html>
