@@ -1,0 +1,10 @@
+button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+}
+button:hover{
+    filter: brightness(80%);
+}
