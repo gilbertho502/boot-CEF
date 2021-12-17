@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
+}
+body{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+/* #place{
+    position: relative;
+}
+#place::after{
+    content: "Email or Phone";
+    position: relative;
+    left: 5px;
+    top: 20px;
+} */
+
+.header div{
+    float: left;
+    margin-right: 10px;
+}
+#forgot{
+    float: right;
+    margin-right: 25px;
+}
+
+.header{
+    background-color: #4d6eaa;
+    color: #fff;
+    padding: 0 50px;
+}
+.header label, #login{
+    display: inline;
+
+   
+}
+
+#login{
+    background-color: #5f80b5;
+    color: #fff;
+    border: none;
+    font-size: 10px;
+
+}
+
+.body{
+    background-color: #ecf0f2;
+    padding: 0px 50px;
+}
+.body input[type='text'], .body input[type='radio'] {
+    display: inline;
+    padding-right: 25px;
+    padding-left: 8px;
+
+}
+.body input{
+    margin: 10px 0px;
+    display: block;
+    padding-top: 10px 0px;
+
+}
+.body .line{
+    padding-right: 215px;
+
+}
+#nuevo{
+    background-color: #72aa5e;
+    color: #fff;
+    border: none;
+    padding: 8px 20px ;
+    border-radius: 5px 5px 5px;
+}
+footer{
+    font-size: smaller;
+    margin-bottom: 25px ;
+}
+button{
+    margin-bottom: 25px;
+}

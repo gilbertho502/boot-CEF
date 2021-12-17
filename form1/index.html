@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Tarea 1</title>
+  </head>
+  <body>
+    <form name="formulario" action="/send.php" method="post">
+      <h1>Simple Event Registration</h1>
+      <p>Fill our the form to register to our event</p>
+        <div class="linea"></div>
+      <div>
+        Name
+        <input type="text" name="name" />
+        <input type="text" />
+      </div>
+
+      <div>Title <input type="text" name="title" /></div>
+
+      <div>Company <input type="text" name="company" /></div>
+
+      <div>
+        E-mail
+        <input
+          type="email"
+          name="correo"
+          placeholder="ex: myname@example.com"
+        />
+      </div>
+
+      <div>
+        Phone Numbre <input id="code" type="tel" name="area" /> -
+        <input type="tel" name="telefono" />
+      </div>
+
+      <div>
+        Are you an existing customer?
+        <input type="radio" name="customer" value="yes" />Yes
+        <input type="radio" name="customer" value="no" />No
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
