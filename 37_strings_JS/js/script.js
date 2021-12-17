@@ -77,7 +77,10 @@ let arreglo1 = str.split(" ")
 console.log("nuevo arreglo: ",arreglo1)
 
 for (let k =0; k<arreglo1.length; k++) {
-     console.log("valor es: ",arreglo1[k])
-     console.log("cantidad de letras: ", arreglo1[k].length)
-
+    console.log("valor es: ",arreglo1[k])
+    console.log("cantidad de letras: ", arreglo1[k].length)
+    datos = parseInt( arreglo1[k].length)
+    console.log(datos)
+    let array10 = new Array(datos) 
+    console.log(array10)
 }
