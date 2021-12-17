@@ -71,10 +71,13 @@ console.log("el numero mayor es: " , array[0])
 
 
 
-let str =  "tratemos con una palabra grande a ver su longiud: ottorriringolo"
+let str =  "tratemos con una palabra grande a ver su longitud: ottorriringolo"
 console.log(str)
 let arreglo1 = str.split(" ")
-console.log(arreglo1)
-let dato = arreglo1.length
-console.log(dato)
+console.log("nuevo arreglo: ",arreglo1)
 
+for (let k =0; k<arreglo1.length; k++) {
+     console.log("valor es: ",arreglo1[k])
+     console.log("cantidad de letras: ", arreglo1[k].length)
+
+}
