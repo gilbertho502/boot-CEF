@@ -1,0 +1,10 @@
+li {
+    color: cadetblue;
+    margin-left: 20px;
+}
+ul li {
+    display: inline;
+}
+li:nth-child(3){
+    color: red;
+}
