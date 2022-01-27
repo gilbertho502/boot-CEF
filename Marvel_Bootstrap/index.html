@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Marvel APP</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light"
+    >
+      <div class="container px-4">
+        <!--LOGO-->
+        <a href="#" class="navbar-brand">
+          <img src="assets/marvel.svg" width="100" alt="" />
+        </a>
+        <!--TOGGLER (Barritas Mobile)-->
+        <button
+          class="navbar-toggler"
+          role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar_menu"
+          aria-controls="navbar_menu"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--MENÚ DE NAVEGACIÓN-->
+        <div
+          id="navbar_menu"
+          class="navbar-collapse collapse"
+        >
+          <!--Lista de Items-->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                id="drop_products"
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Shop</a
+              >
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="drop_products"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    All Products
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Comics
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Series
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button
+              id="btn_cart"
+              class="btn btn-outline-dark"
+            >
+              <i class="bi bi-cart-fill"></i>
+              Cart
+              <span class="badge rounded-pill bg-dark ms-1">
+                0</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--HEADER-->
+    <header>
+      <div class="overlay"></div>
+      <video
+        src="assets/video.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="container h-100">
+        <div
+          class="d-flex h-100 flex-column align-items-center justify-content-center text-white"
+        >
+          <h1 class="display-3">Marvel Comics</h1>
+          <p>Find the best Marvel Universe Comics</p>
+        </div>
+      </div>
+    </header>
+    <!--CONTENT-->
+    <section class="py-5">
+      <div class="container mt-2">
+        <p class="h1 mb-5">New Releases</p>
+
+        <div
+          id="card_container"
+          class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
+        >
+          <!--PLANTILLA DEL CARD -->
+          <div
+            class="col mb-5"
+            id="card_template"
+            style="display: none"
+          >
+            <div class="card">
+              <img
+                class="card-img-top comic_img"
+                src="#"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="fw-bolder comic_name">
+                  {COMIC NAME}
+                </h5>
+                <div
+                  class="d-flex justify-content-center text-warning small"
+                >
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="px-2 text-dark">4.5</span>
+                </div>
+
+                <span
+                  class="text-muted text-decoration-line-through comic_ori_price"
+                >
+                  {ORIGINAL PRICE}
+                </span>
+                <span class="comic_price">{PRICE}</span>
+              </div>
+
+              <div
+                class="card-footer pb-4 border-top-0 bg-transparent"
+              >
+                <div class="text-center">
+                  <button
+                    class="btn btn-outline-dark comic_button"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PIE PÁGINA-->
+    <footer class="bg-dark py-5">
+      <div class="container text-white">
+        <p class="text-center m-0">Copyright &copy; 2022</p>
+      </div>
+    </footer>
+
+    <pre id="code"></pre>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

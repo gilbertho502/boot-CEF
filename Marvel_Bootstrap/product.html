@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Product View</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container px-4">
+        <!--LOGO-->
+        <a href="#" class="navbar-brand">
+          <img src="assets/marvel.svg" width="100" alt="" />
+        </a>
+        <!--TOGGLER (Barritas Mobile)-->
+        <button
+          class="navbar-toggler"
+          role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar_menu"
+          aria-controls="navbar_menu"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--MENÚ DE NAVEGACIÓN-->
+        <div id="navbar_menu" class="navbar-collapse collapse">
+          <!--Lista de Items-->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                id="drop_products"
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Shop</a
+              >
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="drop_products"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"> All Products </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Comics </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Series </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button id="btn_cart" class="btn btn-outline-dark">
+              <i class="bi bi-cart-fill"></i>
+              Cart
+              <span class="badge rounded-pill bg-dark ms-1"> 0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Header-->
+
+    <section class="bg-light">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-5 mt-5">
+            <div class="card mb-3">
+              <img
+                id="comic_image"
+                class="card-img img-fluid"
+                src="assets/comic.jpeg"
+                alt="Card image cap"  
+              />
+            </div>
+          </div>
+          <!-- col end -->
+          <div class="col-lg-7 mt-5">
+            <div id="comic_card"  class="card h-100">
+              <div class="card-body">
+                <h1 id="title" class="h2">{{TITLE}}</h1>
+                <p id="price" class="h3 py-2">{{PRICE}}</p>
+                <div
+                  class="d-flex justify-content-start small text-warning mb-2"
+                >
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star"></div>
+                </div>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <h6>Format:</h6>
+                  </li>
+                  <li class="list-inline-item">
+                    <p class="text-muted">
+                      <strong id="format">{{FORMAT}}</strong>
+                    </p>
+                  </li>
+                </ul>
+
+                <h6>Description:</h6>
+                <p id="description">{{DESCRIPTION}}</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <h6>Avaliable Stock :</h6>
+                  </li>
+                  <li class="list-inline-item">
+                    <p class="text-muted">
+                      <strong id="stock">{{STOCK}} </strong>
+                    </p>
+                  </li>
+                </ul>
+
+                <h6>Creators:</h6>
+                <ul id="creators" class="list-unstyled pb-3">
+                  <!-- <li> CREATOR 1</li>...-->
+                </ul>
+
+                <form action="" method="GET">
+                  <input
+                    type="hidden"
+                    name="product-title"
+                    value="Activewear"
+                  />
+                  <div class="row">
+                    <div class="col-auto">
+                      <ul class="list-inline pb-3">
+                        <li class="list-inline-item text-right">
+                          Quantity
+                          <input
+                            type="hidden"
+                            name="product-quanity"
+                            id="product-quanity"
+                            value="1"
+                          />
+                        </li>
+                        <li class="list-inline-item">
+                          <span class="btn btn-dark" id="btn-minus"
+                            >-</span
+                          >
+                        </li>
+                        <li class="list-inline-item">
+                          <span
+                            class="badge bg-secondary"
+                            id="var-value"
+                            >1</span
+                          >
+                        </li>
+                        <li class="list-inline-item">
+                          <span class="btn btn-dark" id="btn-plus"
+                            >+</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row pb-3">
+                    <div class="col d-grid">
+                      <button
+                        id="btn_add"
+                        type="button"
+                        class="btn btn-danger btn-lg"
+                        name="submit"
+                        value="addtocard"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Your Website 2021
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script type="module" src="js/product.js"></script>
+  </body>
+</html>
