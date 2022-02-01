@@ -1,0 +1,39 @@
+nav ul li{
+    color: blue;
+    font-size: 12px;
+}
+h1{
+    color: #333;
+    font-size: 20px;
+}
+h2{
+    color: #666;
+    font-size: 16px;
+}
+p, li {
+    color: #6f6f6f;
+    font-size: 20px;
+}
+img{
+    width: 300px;
+    box-shadow: 5px 10px 10px  red;
+
+}
+
+a{
+    color: #00F;
+    font-size: 12px;
+}
+ul{
+    padding: 0px 22px;
+}
+li{
+    margin: 10px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: hsl(56, 100%, 95%);
+}
+
+/*padding es relleno*/
