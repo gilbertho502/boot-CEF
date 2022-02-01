@@ -1,0 +1,20 @@
+caption{
+    color: #00f;
+}
+.especial{
+    color: #ffa500;
+}
+
+th{
+    color: #f00;
+}
+tbody td{
+    color: #0f0;
+}
+#negrita{
+    color: #ffa500;
+}
+
+table{
+    border-collapse: collapse;
+}
